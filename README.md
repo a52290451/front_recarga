@@ -93,3 +93,5 @@ ng e2e
 ## Recursos adicionales
 
 Si necesitas más información sobre Angular CLI, consulta la [Documentación Oficial de Angular CLI](https://angular.dev/tools/cli) .
+
+**NOTA:** El Backend de la aplicación se encuentra en: https://github.com/a52290451/recargasc.git
