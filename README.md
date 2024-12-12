@@ -1,59 +1,95 @@
-# Recargas
+# Proyecto de Recargas de Celulares
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Este proyecto es una aplicación Angular que sirve como interfaz para gestionar recargas de celulares por vendedor y operador móvil.
 
-## Development server
+## Prerrequisitos
 
-To start a local development server, run:
+Asegúrate de tener instalado lo siguiente antes de comenzar:
+
+- Node.js (versión 18 o superior recomendada)
+- Angular CLI (versión 19.0.2 o superior)
+
+**Para instalar Angular CLI globalmente, ejecuta:**
+
+```bash
+npm install -g @angular/cli
+```
+
+## Clonar el repositorio
+
+Para obtener el código fuente del proyecto, clona el repositorio desde GitHub:
+
+```bash
+git clone https://github.com/a52290451/front_recarga.git
+```
+
+Luego, accede al directorio del proyecto:
+
+```bash
+cd front_recarga
+```
+
+Instala las dependencias necesarias con:
+
+```bash
+npm install
+```
+
+## Servidor de desarrollo
+
+Para iniciar el servidor de desarrollo, ejecuta:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Luego, abre tu navegador y navega a `http://localhost:4200/`. La aplicación se recargará automáticamente cuando modifiques los archivos fuente.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Generar componentes o módulos adicionales
+
+Puedes utilizar Angular CLI para generar nuevos componentes, servicios, directivas, etc. Por ejemplo, para generar un nuevo componente:
 
 ```bash
-ng generate component component-name
+ng generate component nombre-del-componente
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para ver todos los esquemas disponibles:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Construcción del proyecto
 
-To build the project run:
+Para compilar el proyecto y preparar los artefactos para producción, ejecuta:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Los archivos resultantes estarán en la carpeta `dist/`. Esta versión está optimizada para rendimiento.
 
-## Running unit tests
+## Ejecución de pruebas unitarias
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para ejecutar las pruebas unitarias con [Karma](https://karma-runner.github.io), utiliza el siguiente comando:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+Las pruebas se ejecutarán en un navegador configurado y mostrarán los resultados en tiempo real.
 
-For end-to-end (e2e) testing, run:
+## Pruebas de extremo a extremo (e2e)
+
+Si el proyecto incluye pruebas de extremo a extremo, puedes ejecutarlas con:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+**Nota:** Asegúrate de tener configurado un framework de pruebas e2e, como Protractor o Cypress.
 
-## Additional Resources
+## Recursos adicionales
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Si necesitas más información sobre Angular CLI, consulta la [Documentación Oficial de Angular CLI](https://angular.dev/tools/cli) .

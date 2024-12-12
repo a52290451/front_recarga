@@ -46,10 +46,10 @@ export class RecargaComponent {
     const recargaData: Recarga = {
       id_operador: this.recargaForm.value.operador ?? 0,
       monto: this.recargaForm.value.monto ?? 0,
-      id_vendedor: this.vendedor?.id_ven ?? 0,
+      id_ven: this.vendedor?.id_ven ?? 0,
       id_usuario: this.recargaForm.value.id_usuario ?? 0,
       telefono: this.recargaForm.value.numero ?? 0,
-      estado: '',
+      estado: true,
       fecha: new Date,
     };
 
