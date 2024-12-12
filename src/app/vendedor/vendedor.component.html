@@ -9,7 +9,7 @@
     </mat-card-header>
     <mat-card-content class="vendedores-container">
         <mat-card *ngFor="let vendedor of vendedores" appearance="outlined" class="vendedor-container">
-            <mat-card-header>
+            <mat-card-header [ngStyle]="{'display': 'flex', 'justify-content': 'center'}">
                 <mat-card-title>
                     {{ vendedor.nombre_vendedor }}
                 </mat-card-title>

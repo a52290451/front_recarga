@@ -10,7 +10,7 @@ import { RecargaService } from '../../common/services/recarga.service';
 })
 export class TotalesComponent {
   totales: any[] = [];
-  displayedColumns: string[] = ['operador', 'cantidad', 'total'];
+  displayedColumns: string[] = ['ID','operador', 'cantidad', 'total'];
 
   constructor(private recargaService: RecargaService) { }
 

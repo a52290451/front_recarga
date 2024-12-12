@@ -10,11 +10,6 @@
     <mat-card-content>
         <table mat-table [dataSource]="recargas">
 
-            <ng-container matColumnDef="id">
-                <th mat-header-cell *matHeaderCellDef> ID </th>
-                <td mat-cell *matCellDef="let recarga"> {{recarga.id}} </td>
-            </ng-container>
-
             <ng-container matColumnDef="id_operador">
                 <th mat-header-cell *matHeaderCellDef> Operador </th>
                 <td mat-cell *matCellDef="let recarga"> {{recarga.id_operador}} </td>

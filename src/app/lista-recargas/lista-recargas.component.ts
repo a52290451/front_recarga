@@ -12,7 +12,7 @@ import { Recarga } from '../../common/models/recarga.interface';
 export class ListaRecargasComponent {
 
   recargas: Recarga[] = [];
-  displayedColumns: string[] = ['id', 'id_operador', 'monto', 'telefono', 'fecha', 'estado'];
+  displayedColumns: string[] = ['id_operador', 'monto', 'telefono', 'fecha', 'estado'];
 
   constructor(private recargaService: RecargaService) { }
 
