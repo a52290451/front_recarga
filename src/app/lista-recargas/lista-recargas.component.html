@@ -1,0 +1,47 @@
+<mat-card appearance="outlined" style="max-width: 960px;">
+    <mat-card-header>
+        <mat-card-title>
+            Historial de Recargas
+        </mat-card-title>
+        <mat-card-subtitle>
+            A continuación verá el historial de regargas realizadas
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <table mat-table [dataSource]="recargas">
+
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef> ID </th>
+                <td mat-cell *matCellDef="let recarga"> {{recarga.id}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="id_operador">
+                <th mat-header-cell *matHeaderCellDef> Operador </th>
+                <td mat-cell *matCellDef="let recarga"> {{recarga.id_operador}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="monto">
+                <th mat-header-cell *matHeaderCellDef> Valor </th>
+                <td mat-cell *matCellDef="let recarga"> {{recarga.monto}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="telefono">
+                <th mat-header-cell *matHeaderCellDef> Teléfono </th>
+                <td mat-cell *matCellDef="let recarga"> {{recarga.telefono}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="estado">
+                <th mat-header-cell *matHeaderCellDef> Estado </th>
+                <td mat-cell *matCellDef="let recarga"> {{recarga.estado}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="fecha">
+                <th mat-header-cell *matHeaderCellDef> Fecha </th>
+                <td mat-cell *matCellDef="let recarga"> {{recarga.fecha | date:'short'}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+    </mat-card-content>
+</mat-card>

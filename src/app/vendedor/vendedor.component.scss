@@ -1,0 +1,9 @@
+.vendedores-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.vendedor-container {
+    max-width: 240px;
+}

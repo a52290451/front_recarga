@@ -1,0 +1,13 @@
+<mat-card appearance="outlined" style="max-width: 960px;">
+    <mat-card-header>
+        <mat-card-title>
+            Bienvenido al sistema de recargas
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <app-vendedor *ngIf="!vendedor" (vendedorSeleccionado)="setVendedor($event)"></app-vendedor>
+        <app-totales *ngIf="!vendedor"></app-totales>
+        <app-lista-recargas *ngIf="!vendedor"></app-lista-recargas>
+        <app-recarga *ngIf="vendedor" [vendedor]="vendedor" (volver)="setVendedor(null)"></app-recarga>
+    </mat-card-content>
+</mat-card>

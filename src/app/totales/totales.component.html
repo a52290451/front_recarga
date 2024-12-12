@@ -1,0 +1,32 @@
+<mat-card appearance="outlined" style="max-width: 960px;">
+    <mat-card-header>
+        <mat-card-title>
+            Historial de Recargas
+        </mat-card-title>
+        <mat-card-subtitle>
+            A continuación verá el resumen de las recargas registradas por operador
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <table mat-table [dataSource]="totales">
+
+            <ng-container matColumnDef="operador">
+                <th mat-header-cell *matHeaderCellDef> ID </th>
+                <td mat-cell *matCellDef="let row"> {{row.id_operador}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="cantidad">
+                <th mat-header-cell *matHeaderCellDef> Operador </th>
+                <td mat-cell *matCellDef="let row"> {{row.cantidad}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="total">
+                <th mat-header-cell *matHeaderCellDef> Valor </th>
+                <td mat-cell *matCellDef="let row"> {{row.total}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+    </mat-card-content>
+</mat-card>

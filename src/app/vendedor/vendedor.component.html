@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            Estos son los proveedores disponibles
+        </mat-card-title>
+        <mat-card-subtitle>
+            Seleccione su vendedor de preferencia
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="vendedores-container">
+        <mat-card *ngFor="let vendedor of vendedores" appearance="outlined" class="vendedor-container">
+            <mat-card-header>
+                <mat-card-title>
+                    {{ vendedor.nombre_vendedor }}
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-actions>
+                <button mat-raised-button color="primary" (click)="seleccionarVendedor(vendedor)">
+                    Seleccionar</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-card-content>
+</mat-card>
